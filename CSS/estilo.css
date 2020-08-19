@@ -1,0 +1,228 @@
+/* *{ */
+	/* margin: 0px; */
+	/* padding: 0px; */
+/* } */
+
+#site{
+  /* Definimos a largura da página */
+  /* width:1000px; */
+  /* Definirmos a altura da página*/
+  height:100%;
+  /* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+  /*top : posição de cima */
+  margin-top:10;
+  /* left: posição de esquerda*/
+  margin-left:auto;
+  /* bottom : posição de baixo */
+  margin-bottom:10;
+  /* right : posição de direita */
+  margin-right:auto;
+  /* Aqui definiremos a cor de fundo da página */
+  background-color:#658;
+}
+#header{
+  /*Novamente definimos a largura da div*/
+  /* width:1000px; */
+  /* altura da div */
+  height:100px;
+  /* Cor de fundo da div */
+  background-color:#FFFF;
+  }
+
+body{
+	/* background-image: url("../imagem/fundo9.jpg"); */
+	/* background-position: 70% 70%; */
+	color: #000000;
+	font-family: arial;
+}
+
+input[type=button]{
+	display: block;
+	height: 40px;	
+	width: 300px;
+	margin: 5px;
+	border-radius: 10px;
+	border: 1px solid black; 
+	font-size: 14pt;
+	padding: 5px 10px;
+	text-align: center;
+	cursor:pointer;
+	background-color: #CEF6F5;
+}
+
+input[type=text]{
+	display: block;
+	height: 30px;	
+	width: 400px;
+	margin: 2px;
+	border-radius: 10px;
+	border: 1px solid black; 
+	font-size: 14pt;
+	padding: 5px 10px;
+	text-align: center;
+}
+
+/* Esconde o input */
+input[type='file'] {
+  display: none
+}
+
+/* Aparência que terá o seletor de arquivo */
+label {
+  background-color: #3498db;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px 25px
+}
+
+input[type=submit]{
+	display: block;
+	height: 40px;	
+	width: 300px;
+	margin: 5px;
+	border-radius: 10px;
+	border: 1px solid black; 
+	font-size: 14pt;
+	padding: 5px 10px;
+	text-align: center;
+	background-color: #FAFAFA;
+	cursor:pointer;
+}
+
+input[type=email]{
+	display: block;
+	height: 40px;	
+	width: 420px;
+	margin: 5px;
+	border-radius: 10px;
+	border: 1px solid black; 
+	font-size: 14pt;
+	padding: 5px 10px;
+	text-align: center;
+	/* background-color: #ECF5FB; */
+	cursor:pointer;
+}
+
+input[type=password]{
+	display: block;
+	height: 40px;	
+	width: 420px;
+	margin: 5px;
+	border-radius: 10px;
+	border: 1px solid black; 
+	font-size: 14pt;
+	padding: 5px 10px;
+	text-align: center;
+	/* background-color: #ECF5FB; */
+	cursor:pointer;
+}
+
+div#corpo-form{
+	/* background-color: red;	 */
+	width: 420px;
+	margin: 150px auto 0px auto;
+}
+div#corpo-form-cad{
+	/* background-color: red;	 */
+	width: 420px;
+	margin: 50px auto 0px auto;
+}
+div#corpo-form-vip{
+	/* background-color: red;	 */
+	width: 420px;
+	margin: 30% auto 50% auto;
+}
+div#corpo-form-stand{
+	/* background-color: red;	 */
+	width: 10000px;
+	margin: 5% auto auto auto;
+}
+div#corpo-form h1, div#corpo-form-cad h1{
+	text-align:center;
+	padding: 20px;	
+}
+a{
+	color: white;
+	text-decoration:none;
+}
+a:hover{
+		text-decoration: underline;
+}
+
+::-webkit-input-placeholder{
+	color: %CBCBCB;
+}
+:-moz-placeholder{
+	color: %CBCBCB;
+}
+::-moz-placeholder{
+	color: %CBCBCB;
+}
+::-ms-input-placeholder{
+	color: %CBCBCB;
+}
+
+div#msg-sucesso{
+	width: 380px;
+	margin: 10px auto;	
+	padding: 10px;
+	background-color: rgba(50,205,50);
+	border: 1px solid rgb();
+	text-align: center;
+}
+
+div#msg-erro{
+	width: 380px;
+	margin: 10px auto;	
+	padding: 10px;
+	color: withe;
+	background-color: rgba(250,128,114);
+	border: 1px solid rgb(165, 42, 42);
+	text-align: center;
+}
+
+div#conteudo{
+	/*Novamente definimos a largura da div*/
+	width:1000px;
+	/* altura da div */
+	height:auto;
+	} 
+	
+div#conteudo-left{
+	/*Novamente definimos a largura da div*/
+	width:500px;
+	/* altura da div */
+	height:auto;
+	/* O atributo Float é utilizado para fazermos o nosso bloco(div)
+	literalmente flutue e se posicione onde queremos na página, 
+	quando escolhemos left, dizemos que esse bloco irá se posicionar na 
+	parte esquerda da página */
+	float:left;
+	/* Cor de fundo da div */
+	}
+ div#conteudo-right{
+  /*Novamente definimos a largura da div*/
+  width:500px;
+  /* altura da div */
+  height:auto;
+  /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco 
+  em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo 
+  em cascata, nossa div conteúdo definimos a largura de 1000px e na 
+  conteudo-left 500px, automaticamente ao definirmos o conteudo-right 
+  com 500px e à esquerda também, ele ficou à direita do conteudo-left, 
+  pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+  float:left;
+  /* Cor de fundo da div */
+  }
+
+
+
+div#ultimas p{line-height:1.4;} 
+	#ultimas a.img-left{float:left; margin-right:10px;} 
+	#ultimas h3 {margin:0; font-size:1.1em;} 
+	#ultimas span.data {float:right; margin-top:-15px; font-size:0.9em;}
+	#ultimas p.resumo {border-bottom:1px solid #ccc; padding-bottom:10px;}
+}
+#container img {float:left}
